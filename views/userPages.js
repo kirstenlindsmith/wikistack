@@ -1,7 +1,7 @@
 const html = require("html-template-tag");
 const layout = require("./layout");
 
-module.exports = (user, pages) => layout(html`
+module.exports = (user, pages) => layout(`
   <h3>Pages written by ${user.name}</h3>
   <hr>
   <form method="GET" action="/wiki/search">

@@ -1,6 +1,6 @@
 const html = require("html-template-tag");
 
-module.exports = (content) => html`<!DOCTYPE html>
+module.exports = (content) => `<!DOCTYPE html>
   <html lang="en">
     <head>
       <title>WikiStack</title>
@@ -29,7 +29,7 @@ module.exports = (content) => html`<!DOCTYPE html>
         </div>
       </div>
       <div class="container content">
-        Content: ${content}
+        ${content}
       </div>
       <hr/>
       <div id="footer" class="container text-muted">
